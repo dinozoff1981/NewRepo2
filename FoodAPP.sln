@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodAPP.Server", "FoodAPP.Server\FoodAPP.Server.csproj", "{2C85E728-FFB2-4F9A-B968-CD299CCA60F1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "foodapp.client", "foodapp.client\foodapp.client.esproj", "{9545EFD6-2420-41C4-BA96-5727A4F0646A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C85E728-FFB2-4F9A-B968-CD299CCA60F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C85E728-FFB2-4F9A-B968-CD299CCA60F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C85E728-FFB2-4F9A-B968-CD299CCA60F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C85E728-FFB2-4F9A-B968-CD299CCA60F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9545EFD6-2420-41C4-BA96-5727A4F0646A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C444A30-7A76-41B2-B393-FFC2D218E6C8}
+	EndGlobalSection
+EndGlobal
