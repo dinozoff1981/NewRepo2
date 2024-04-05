@@ -1,4 +1,3 @@
-
 using FoodAPP.Server.OpenAi;
 using FoodAPP.Server.Services;
 
@@ -36,6 +35,13 @@ namespace FoodAPP.Server
 
             app.UseAuthorization();
 
+            // Configure CORS policy
+            app.UseCors(options =>
+            {
+                options.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            });
 
             app.MapControllers();
 

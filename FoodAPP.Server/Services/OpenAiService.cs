@@ -1,6 +1,7 @@
 ﻿using FoodAPP.Server.OpenAi;
 using Microsoft.Extensions.Options;
 using OpenAI_API;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace FoodAPP.Server.Services
@@ -12,11 +13,13 @@ namespace FoodAPP.Server.Services
         {
             config = options.CurrentValue;
         }
-        public async Task<string>Drinks()
+
+        public async Task<string> Drinks()
         {
-            string text = "cloth shopping suggestion";
-            var api = new OpenAIAPI(config.key); 
+            string text = "Full history of Rome";
+            var api = new OpenAIAPI(config.key);
             var result = await api.Completions.GetCompletion(text);
+            
 
             return result;
         }
