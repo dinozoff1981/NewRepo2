@@ -27,8 +27,8 @@ function Home() {
 
     return (
         <div>
-            <h1>TRAVEL INFO</h1>
-            <p>History</p>
+            <h1>Drinks</h1>
+            <p>Sweden</p>
             {loading ? (
                 <p>Loading...</p>
             ) : (
