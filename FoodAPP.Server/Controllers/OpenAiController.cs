@@ -8,12 +8,12 @@ namespace FoodAPP.Server.Controllers
     [Route("[controller]")]
     public class OpenAiController : ControllerBase
     {
-      
+
 
         private readonly ILogger<OpenAiController> _logger;
         private readonly IOpenAiService _openAiService;
 
-        public OpenAiController(ILogger<OpenAiController> logger,IOpenAiService openAiService)
+        public OpenAiController(ILogger<OpenAiController> logger, IOpenAiService openAiService)
         {
             _logger = logger;
             _openAiService = openAiService;
@@ -21,22 +21,18 @@ namespace FoodAPP.Server.Controllers
         [HttpPost]
         [Route("Drinks")]
 
-        public async Task<IActionResult>Drinks()
+        public async Task<IActionResult> Drinks()
         {
-        
-            var result=await _openAiService.Drinks();
+
+            var result = await _openAiService.Drinks();
 
             return Ok(result);
         }
 
-
-       
-
-
+     
+           
 
 
 
-
-
+        }
     }
-}

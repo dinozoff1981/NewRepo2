@@ -3,5 +3,6 @@
     public interface IOpenAiService
     {
         Task<string> Drinks();
+
     }
 }

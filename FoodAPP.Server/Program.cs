@@ -12,10 +12,12 @@ namespace FoodAPP.Server
             // Add services to the container.
             builder.Services.Configure<OpenAiConfig>(builder.Configuration.GetSection("OpenAI"));
 
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            
 
             builder.Services.AddScoped<IOpenAiService, OpenAiService>();
 
@@ -41,13 +43,21 @@ namespace FoodAPP.Server
                 options.AllowAnyOrigin()
                        .AllowAnyMethod()
                        .AllowAnyHeader();
+                     
+                
             });
+
+         
 
             app.MapControllers();
 
             app.MapFallbackToFile("/index.html");
 
+
+
             app.Run();
+
+
         }
     }
 }

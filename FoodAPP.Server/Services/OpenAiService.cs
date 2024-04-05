@@ -1,27 +1,29 @@
-﻿using FoodAPP.Server.OpenAi;
+﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using FoodAPP.Server.OpenAi;
 using Microsoft.Extensions.Options;
 using OpenAI_API;
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
 
 namespace FoodAPP.Server.Services
 {
     public class OpenAiService : IOpenAiService
     {
-        private readonly OpenAiConfig config;
+        private readonly OpenAiConfig _config;
+
         public OpenAiService(IOptionsMonitor<OpenAiConfig> options)
         {
-            config = options.CurrentValue;
+            _config = options.CurrentValue;
         }
 
         public async Task<string> Drinks()
         {
-            string text = "Full history of Rome";
-            var api = new OpenAIAPI(config.key);
+            string text = " Drinks In Sweden";
+            var api = new OpenAIAPI(_config.key);
             var result = await api.Completions.GetCompletion(text);
-            
-
             return result;
         }
+
+      
     }
 }
