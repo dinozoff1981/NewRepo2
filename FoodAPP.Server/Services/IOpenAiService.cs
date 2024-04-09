@@ -2,7 +2,7 @@
 {
     public interface IOpenAiService
     {
-        Task<string> Drinks();
+        Task<string> Foods();
 
     }
 }

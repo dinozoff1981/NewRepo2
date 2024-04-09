@@ -21,10 +21,10 @@ namespace FoodAPP.Server.Controllers
         [HttpPost]
         [Route("Drinks")]
 
-        public async Task<IActionResult> Drinks()
+        public async Task<IActionResult> Foods()
         {
 
-            var result = await _openAiService.Drinks();
+            var result = await _openAiService.Foods();
 
             return Ok(result);
         }

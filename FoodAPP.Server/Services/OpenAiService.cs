@@ -16,9 +16,9 @@ namespace FoodAPP.Server.Services
             _config = options.CurrentValue;
         }
 
-        public async Task<string> Drinks()
+        public async Task<string> Foods()
         {
-            string text = " Drinks In Sweden";
+            string text = "List of Foods In Sweden";
             var api = new OpenAIAPI(_config.key);
             var result = await api.Completions.GetCompletion(text);
             return result;
